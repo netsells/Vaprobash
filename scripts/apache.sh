@@ -23,7 +23,7 @@ sudo chmod guo+x vhost
 sudo mv vhost /usr/local/bin
 
 # Create a virtualhost to start
-sudo vhost -s $1.xip.io -d /vagrant/public
+sudo vhost -s app.dev -d /vagrant/public
 
 # PHP Config for Apache
 cat > /etc/apache2/conf-available/php5-fpm.conf << EOF
